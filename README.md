@@ -60,3 +60,10 @@ ccb version         # 看当前版本
 ## 支持平台
 
 `darwin/arm64` · `darwin/amd64` · `linux/amd64` · `linux/arm64`(Windows 暂不支持)。每个 release 附 `SHA256SUMS` 可校验完整性。
+
+## 使用技巧
+
+- **滚动**:默认 fullscreen 渲染,鼠标滚轮直接滚对话(`PgUp`/`PgDn` 也行);往上滚会暂停跟随,`Ctrl+End` 跳回最新并恢复跟随。搜索:`Ctrl+o` 进 transcript 模式按 `/` 搜。
+- **粘贴图片**:截图进剪贴板后按 **`Ctrl+V`**,本地剪贴板的图就附到 claude——注意是 `Ctrl+V` **不是** `Cmd+V`(后者被终端吞了)。零安装(macOS 走系统自带 osascript/sips)。
+- **离开 / 续接**:关掉终端窗口 = 离开但保活(云端继续,下次 `ccb` 回来还在);`/exit` 才真正结束任务。
+- **项目记忆 / 技能**:进会话时自动把项目 `CLAUDE.md` 和你全局 `~/.claude/skills` 同步进沙箱,云端 claude 直接能用。
